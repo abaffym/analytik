@@ -1,0 +1,50 @@
+{
+  "version": "0.0.1",
+  "events": [
+    {
+      "trackingId": "no_params_event",
+      "description": "Event with no parameters"
+    },
+    {
+      "trackingId": "params_event",
+      "description": "Event with all parameters",
+      "params": [
+        {
+          "trackingId": "param_string",
+          "type": "STRING"
+        },
+        {
+          "trackingId": "param_boolean",
+          "type": "BOOLEAN"
+        },
+        {
+          "trackingId": "param_int",
+          "type": "INT"
+        },
+        {
+          "trackingId": "param_enum",
+          "type": "ENUM",
+          "values": [
+            "value_one",
+            "value_two",
+            "value_three"
+          ]
+        }
+      ]
+    },
+    {
+      "trackingId": "test_group_no_params_event",
+      "group": "TestGroup"
+    },
+    {
+      "trackingId": "test_group_params_event",
+      "group": "TestGroup",
+      "params": [
+        {
+          "trackingId": "param_string",
+          "type": "STRING"
+        }
+      ]
+    }
+  ]
+}

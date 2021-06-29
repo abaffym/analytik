@@ -1,0 +1,44 @@
+[versions]
+androidGradlePlugin = "8.2.0"
+androidTools = "31.2.0"
+compose = "1.5.10"
+gradlePluginPublish = "1.1.0"
+junit5 = "5.10.1"
+kotlin = "1.9.22"
+kotlinPoet = "1.15.1"
+kotlinxSerialization = "1.6.2"
+mavenPublish = "0.26.0"
+mpfilepicker = "2.1.0"
+spotless = "6.23.3"
+
+[plugins]
+buildLogic-kotlin-library = { id = "analytik.kotlin.library", version = "+" }
+
+android-application = { id = "com.android.application", version.ref = "androidGradlePlugin" }
+
+compose = { id = "org.jetbrains.compose", version.ref = "compose" }
+
+gradle-plugin-publish = { id = "com.gradle.plugin-publish", version.ref = "gradlePluginPublish" }
+
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
+kotlin-serialization = { id = "org.jetbrains.kotlin.plugin.serialization", version.ref = "kotlin" }
+
+maven-publish = { id = "com.vanniktech.maven.publish", version.ref = "mavenPublish" }
+
+spotless = { id = "com.diffplug.spotless", version.ref = "spotless" }
+
+[libraries]
+android-tools-sdkcommon = { module = "com.android.tools:sdk-common", version.ref = "androidTools" }
+junit5-api = { module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit5" }
+junit5-engine = { module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit5" }
+kotlin-stdlib = { module = "org.jetbrains.kotlin:kotlin-stdlib", version.ref = "kotlin" }
+kotlin-test = { module = "org.jetbrains.kotlin:kotlin-test", version.ref = "kotlin" }
+kotlinx-serialization = { module = "org.jetbrains.kotlinx:kotlinx-serialization-json", version.ref = "kotlinxSerialization" }
+kotlinpoet = { module = "com.squareup:kotlinpoet", version.ref = "kotlinPoet" }
+mpfilepicker = { module = "com.darkrockstudios:mpfilepicker", version.ref = "mpfilepicker" }
+
+# Dependencies of the included build-logic
+android-gradlePlugin = { module = "com.android.tools.build:gradle", version.ref = "androidGradlePlugin" }
+kotlin-gradlePlugin = { module = "org.jetbrains.kotlin:kotlin-gradle-plugin", version.ref = "kotlin" }
+spotless-gradlePlugin = { module = "com.diffplug.spotless:spotless-plugin-gradle", version.ref = "spotless" }

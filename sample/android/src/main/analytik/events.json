@@ -1,0 +1,35 @@
+{
+  "version": "0.0.1",
+  "events": [
+    {
+      "trackingId": "no_params_event",
+      "params": []
+    },
+    {
+      "trackingId": "params_event",
+      "params": [
+        {
+          "trackingId": "param_string",
+          "type": "STRING"
+        },
+        {
+          "trackingId": "param_boolean",
+          "type": "BOOLEAN"
+        },
+        {
+          "trackingId": "param_int",
+          "type": "INT"
+        },
+        {
+          "trackingId": "param_enum",
+          "type": "ENUM",
+          "values": [
+            "value_one",
+            "value_two",
+            "value_three"
+          ]
+        }
+      ]
+    }
+  ]
+}
